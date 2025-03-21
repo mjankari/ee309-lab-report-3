@@ -45,8 +45,8 @@
   table(
     columns: 4,
     table.header([], [@circuit-1], [@circuit-2], [@circuit-3]),
-    $V_"peak" "to" V_"peak" "out"$, $26.9V$, $20.9V$, $23.3V$,
-    $V_"peak" "to" V_"peak" "in"$, $20.5V$, $20.6V$, $22.9V$
+    $V_"p" "to" V_"p" "out"$, $26.9V$, $20.9V$, $23.3V$,
+    $V_"p" "to" V_"p" "in"$, $20.5V$, $20.6V$, $22.9V$
   ),
   caption: [Measured peak to peak inputs and outputs]
 ) <table>
