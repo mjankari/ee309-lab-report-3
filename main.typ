@@ -1,3 +1,5 @@
+#import "@preview/unify:0.7.1": qty
+
 #set page(paper: "a4")
 #set text(font: "Liberation Serif", size: 12pt)
 #show heading: set block(below: 2em, above: 2em)
@@ -29,7 +31,7 @@
     image("images/schematics-circuit-2.jpeg", width: 100%),
     image("images/output-circuit-2.jpeg", width: 90%)
   ),
-  caption: [Adding Extra DC Voltage Source ($+5V$)]
+  caption: [Adding Extra DC Voltage Source ($qty("5", "volt")$)]
 ) <circuit-2>
 
 #figure(
@@ -45,10 +47,10 @@
   table(
     columns: 4,
     table.header([], [@circuit-1], [@circuit-2], [@circuit-3]),
-    $V_"p" "to" V_"p" "out"$, $26.9V$, $20.9V$, $23.3V$,
-    $V_"p" "to" V_"p" "in"$, $20.5V$, $20.6V$, $22.9V$
+    $V_"p" "to" V_"p" "out"$, $qty("26.9", "volt")$, $qty("20.9", "volt")$, $qty("23.3", "volt")$,
+    $V_"p" "to" V_"p" "in"$, $qty("20.5", "volt")$, $qty("20.6", "volt")$, $qty("22.9", "volt")$
   ),
-  caption: [Measured peak to peak inputs and outputs]
+  caption: [Measured voltage peak to peak inputs and outputs]
 ) <table>
 
 == Questions
