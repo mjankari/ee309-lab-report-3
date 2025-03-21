@@ -16,7 +16,7 @@
     image("images/output-circuit-1.jpeg", width: 90%)
   ),
   caption: [Positive peak clamped at $V_y$ level]
-)
+) <circuit-1>
 
 #figure(
   grid(
@@ -35,6 +35,16 @@
   ),
   caption: [Changing The Direction of Diode]
 ) <circuit-3>
+
+#figure(
+  table(
+    columns: 4,
+    table.header([], [@circuit-1], [@circuit-2], [@circuit-3]),
+    $V_"peak" "to" V_"peak" "out"$, $26.9V$, $20.9V$, $23.3V$,
+    $V_"peak" "to" V_"peak" "in"$, $20.5V$, $20.6V$, $22.9V$
+  ),
+  caption: [Measured peak to peak inputs and outputs]
+) <table>
 
 == Questions
 
