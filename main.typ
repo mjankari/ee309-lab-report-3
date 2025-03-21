@@ -1,3 +1,8 @@
+#set page(paper: "a4")
+#set text(font: "Liberation Serif", size: 12pt)
+#show heading: set block(below: 2em, above: 2em)
+#set par(justify: true)
+
 = EE309 Experiment 3 Report
 
 == Objectives
