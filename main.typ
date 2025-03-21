@@ -1,5 +1,12 @@
 = EE309 Experiment 3 Report
 
+== Objectives
+
+- Observe the output waveform $V_o$ on the oscilloscope with a square wave input
+  $V_i$ applied, keeping the AC/DC switch of the oscilloscope in the DC
+  position.
+- Measure the clamped voltage and verify it with the designed values.
+
 == Results
 
 #figure(
