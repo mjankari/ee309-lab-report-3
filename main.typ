@@ -66,7 +66,7 @@ together.
 
 Clamp essentially means by holding or clamping a level, The voltage will
 stay in place and will not go above nor below the chosen level, It
-achieves that by adding a DC level to an AC signal.
+achieves that by adding a capacitor to the circuit.
 
 === Question 2
 
@@ -89,19 +89,16 @@ depending on the circuit.
 *Try to explain the logic behind the result of @circuit-2 and
 @circuit-3.*
 
-In the second circuit (@circuit-2), where the diode is facing upwards:
+==== For @circuit-2
 
 During the negative half cycle, the diode is forward biased.
-
 The voltage on the resistor, $V_o$, will equal:
 $ V_o = 5 - 0.7 = qty("4.3", "volt") $
-
 During this cycle, the capacitor is charging with the AC input voltage
 and $V_o$: $ "Charge" = 10 + 4.3 = qty("14.3", "volt") $
 
 During the positive half cycle, the diode is reverse biased, so current
 doesn't flow, and the capacitor holds the charge.
-
 So then the output voltage Vo will be the voltage from when the
 capacitor was charging, plus the input AC voltage:
 $ V_o = 10 + 14.3 = qty("24.3", "volt") $
@@ -109,26 +106,20 @@ $ V_o = 10 + 14.3 = qty("24.3", "volt") $
 The minimum and maximum outputs are consistent with the output seen in
 the screenshot of @circuit-2.
 
-In the third circuit (@circuit-3), the diode is flipped.
+==== For @circuit-3
 
 During the positive half cycle, the diode will be forward biased, so
 the capacitor will be charging.
 
 The voltage on the resistor, $V_o$, will equal:
 $ V_o = 5 + 0.7 = qty("5.7", "volt") $
-
 During this cycle, the capacitor is charging with the input AC voltage
-and $V_o$:
-
-$ "Charge" = 10 - 5.7 = qty("4.3", "volt") $
+and $V_o$: $ "Charge" = 10 - 5.7 = qty("4.3", "volt") $
 
 During the negative half cycle, the diode is reverse biased, so current
-doesn't flow, and the capacitor holds the charge.
-
-So then the output voltage Vo will be the voltage from the capacitor,
-plus the input AC voltage:
-
-$ V_o = -10 - 4.3 = qty("-14.3", "volt") $
+doesn't flow, and the capacitor holds the charge. So then the output
+voltage Vo will be the voltage from the capacitor, plus the input AC
+voltage: $ V_o = -10 - 4.3 = qty("-14.3", "volt") $
 
 The numbers are consistent with the output seen in the @circuit-3
 screenshot.
